@@ -1,1 +1,231 @@
-# visa-protocol
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISA PAYMENT NETWORK - SETTLEMENT DIVISION</title>
+    <style>
+        body { 
+            font-family: 'Courier New', Courier, monospace; 
+            background-color: #f0f0f0; 
+            color: #000; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 20px; 
+            border: 1px solid #ccc; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .header { 
+            text-align: center; 
+            border-bottom: 2px solid #000; 
+            margin-bottom: 15px; 
+            padding-bottom: 10px;
+        }
+        .header h1 { 
+            margin: 5px 0; 
+            font-size: 11px; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+        }
+        .header h2 { 
+            margin: 0; 
+            font-size: 11px; 
+            color: #555; 
+            font-weight: normal;
+        }
+        .section { 
+            margin-bottom: 15px; 
+            border: 1px solid #ddd; 
+            padding: 10px; 
+        }
+        .section-title { 
+            font-weight: bold; 
+            background-color: #eee; 
+            padding: 5px; 
+            border-bottom: 1px solid #ddd; 
+            margin-bottom: 10px; 
+            text-transform: uppercase; 
+            font-size: 11px; 
+        }
+        .row { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-bottom: 5px; 
+            font-size: 11px; 
+        }
+        .label { 
+            font-weight: bold; 
+        }
+        .value { 
+            text-align: right; 
+        }
+        .terminal-data { 
+            font-size: 11px; 
+            color: #444; 
+            margin-top: 20px; 
+            border-top: 1px dashed #ccc; 
+            padding-top: 10px; 
+        }
+        .status-pass { 
+            color: rgb(0, 5, 0); 
+            font-weight: bold; 
+        }
+        .amount { 
+            font-size: 11px; 
+            font-weight: bold; 
+            color: #000; 
+        }
+        .verified-badge {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 11px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>VISA PAYMENT NETWORK</h1>
+            <h2>SETTLEMENT DIVISION</h2>
+            <div class="verified-badge">
+                <span style="color: green;">●</span> SYSTEM VERIFIED: 101-PROTOCOL
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="row">
+                <span class="label">TRACK1_DATA:</span>
+                <span class="value">TIME: 22:12:53 Saturday, September 05, 2026</span>
+            </div>
+            <div class="row">
+                <span class="label">>>MESSAGE TRANSMITTED>></span>
+                <span class="value">SWIFT DELIVERED>>></span>
+            </div>
+            <div class="row">
+                <span class="label">TRACK2_DATA:</span>
+                <span class="value">OPEN PROCESS ACCESS / READ VERIFY / MEM +702 / 4053157070056961=948929VISA176231519</span>
+            </div>
+            <div class="row">
+                <span class="label">TRACK3_DATA:</span>
+                <span class="value">VERIFY_EXIT / SESSION 3452810 / ER20200924V955</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">CARDHOLDER INFORMATION</div>
+            <div class="row">
+                <span class="label">CARD HOLDER NAME</span>
+                <span class="value">WILLIAM LEMES DA SILVA</span>
+            </div>
+            <div class="row">
+                <span class="label">ISSUING BANK (AS REPORTED)</span>
+                <span class="value">REVOLUT BANK</span>
+            </div>
+            <div class="row">
+                <span class="label">CARD NUMBER</span>
+                <span class="value">4053 1570 7005 6961</span>
+            </div>
+            <div class="row">
+                <span class="label">EXPIRATION DATE</span>
+                <span class="value">09/30</span>
+            </div>
+            <div class="row">
+                <span class="label">ACCOUNT NUMBER</span>
+                <span class="value">707005696</span>
+            </div>
+            <div class="row">
+                <span class="label">IBAN</span>
+                <span class="value">N/A</span>
+            </div>
+            <div class="row">
+                <span class="label">ROUTING BIC (RECEIVER)</span>
+                <span class="value">N/A</span>
+            </div>
+            <div class="row">
+                <span class="label">CARD PRODUCT / BRAND</span>
+                <span class="value">VISA / DEBIT</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">CLEARANCE REQUEST & PROTOCOL CONFIG</div>
+            <div class="row">
+                <span class="label">AMOUNT CREDITED</span>
+                <span class="value amount">€15,000,000.00 EUR</span>
+            </div>
+            <div class="row">
+                <span class="label">PREVIOUS BALANCE</span>
+                <span class="value">€0.00 EUR</span>
+            </div>
+            <div class="row">
+                <span class="label">NEW CARD BALANCE</span>
+                <span class="value amount">€15,000,000.00 EUR</span>
+            </div>
+            <div class="row">
+                <span class="label">PROTOCOL/ACCOUNT TYPE</span>
+                <span class="value">101 ONLINE 4 DIGIT PIN</span>
+            </div>
+            <div class="row">
+                <span class="label">SENDER/ORIGIN IP</span>
+                <span class="value">198.217.136.20</span>
+            </div>
+            <div class="row">
+                <span class="label">RECEIVER/HOST IP</span>
+                <span class="value">104.18.38.135</span>
+            </div>
+            <div class="row">
+                <span class="label">FIREWALL WHITELIST RULE</span>
+                <span class="value">NGFW-RULE-9999</span>
+            </div>
+            <div class="row">
+                <span class="label">WHITELIST STATUS</span>
+                <span class="value status-pass">AUTHORIZED & VERIFIED (PASS)</span>
+            </div>
+            <div class="row">
+                <span class="label">ISSUING SERVER URL</span>
+                <span class="value">https://visa-terminal43542-bsln71368.netlify.app/v1/issuing/cards/4053157070056961/protocol/101/</span>
+            </div>
+            <div class="row">
+                <span class="label">CLEARING HOUSE CODE</span>
+                <span class="value">AS13335</span>
+            </div>
+            <div class="row">
+                <span class="label">RECEIVING CODE</span>
+                <span class="value">VISA-980489-76544437</span>
+            </div>
+            <div class="row">
+                <span class="label">FILED</span>
+                <span class="value">05/09/2026 22:12:53</span>
+            </div>
+            <div class="row">
+                <span class="label">TERMINAL</span>
+                <span class="value">visa.terminal43542.bsln71368</span>
+            </div>
+            <div class="row">
+                <span class="label">OPERATOR ACCESS</span>
+                <span class="value">125567392451</span>
+            </div>
+            <div class="row">
+                <span class="label">SYSTEM SCREEN</span>
+                <span class="value">Name-ebankingch2:visa.com</span>
+            </div>
+        </div>
+
+        <div class="terminal-data">
+            <div class="row">
+                <span class="label"><<END FILE>></span>
+            </div>
+            <div class="row" style="margin-top: 5px;">
+                <span class="label">VERIFIED BY:</span>
+                <span class="value">VISA-CORE-4.2.1</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
